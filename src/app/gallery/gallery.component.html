@@ -1,0 +1,19 @@
+<div>
+
+    <div *ngFor="let image of images" (click) = "openImage(image)">
+        <img [src]="image.url" alt="{{image.title}}">
+        <p>{{image.title}}</p>
+
+    </div>
+</div>
+
+
+<div>
+
+    <button (click)="closeImage()">Close</button>
+    <img [src]="currentImage?.url" alt="{{currentImage?.title}}">
+    <p>{{currentImage?.title}}</p>
+
+    <button (click)="showPreviousImage()" *ngIf=" hasPreviousImage()">Previous</button>
+    <button (click)="showNextImage()" *ngIf=" hasNextImage()">Next</button>
+</div>

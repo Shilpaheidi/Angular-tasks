@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let user of users;let i = index">{{user}}
+        <button (click)="deleteUser(i)">Delete User</button>
+    </li>
+
+</ul>

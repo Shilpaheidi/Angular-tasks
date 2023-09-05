@@ -1,0 +1,12 @@
+<h2>Personalised Greeting</h2>
+
+<form (submit)="submitForm()">
+
+    <label for="name">Name:</label>
+
+    <input type="text" [(ngModel)]="name" id="name" name="name" required>
+    <button type="submit">Submit
+
+    </button>
+</form>
+<p *ngIf="submitted">Hello,{{name}}</p>

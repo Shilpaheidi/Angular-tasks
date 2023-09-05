@@ -1,0 +1,17 @@
+<div>
+    <input type="number" [(ngModel)]="num1" name="num1">
+    <input type="number" [(ngModel)]="num2" name="num2">
+</div>
+
+<div>
+    <button (click)="add()">+</button>
+    <button (click)="subtract()">-</button>
+    <button (click)="multiply()">*</button>
+    <button (click)="divide()">/</button>
+</div>
+
+<div>
+
+    <p>Result:{{result}}</p>
+    <p *ngIf="errorMessage">{{errorMessage}}</p>
+</div>
