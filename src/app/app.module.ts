@@ -22,6 +22,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { NewTodoListComponent } from './new-todo-list/new-todo-list.component';
 import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     CalculatorComponent,
     NewTodoListComponent,
     ImageGalleryComponent,
-    GalleryComponent
+    GalleryComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
